@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Sustentável - Equilíbrio Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Acessibilidade -->
+</div>
+<div class="acessibilidade">
+        <button onclick="alterarFonte('aumentar')" title="Aumentar Texto">A+</button>
+        <button onclick="alterarFonte('resetar')" title="Restaurar Texto">A-</button>
+    </div>
+
+    <!-- Tela Inicial: Fundo Lavoura Geral -->
+    <div id="tela-inicial" class="container fundo-capa">
+        <h1 id="titulo-principal">Agro Forte e Sustentável</h1>
+        <p>Você assumiu o comando de uma fazenda. Consegue equilibrar a produção de alimentos com a preservação ambiental?</p>
+        <button class="btn-principal" onclick="iniciarJogo()">Começar Missão</button>
+    </div>
+
+    <!-- Tela de Jogo -->
+    <div id="tela-jogo" class="container oculto">
+        <div class="indicadores">
+            <div class="barra-info">📈 Produção: <div id="prog-producao" class="barra"></div></div>
+            <div class="barra-info">🌱 Sustentabilidade: <div id="prog-sustent" class="barra"></div></div>
+            <div class="barra-info">💧 Água: <div id="prog-agua" class="barra"></div></div>
+            <div class="barra-info">💰 Economia: <div id="prog-economia" class="barra"></div></div>
+        </div>
+
+        <div class="balanca-area">
+            <div id="balanca" class="balanca-emoji">⚖️</div>
+            <div class="balanca-label"><span>Produção</span><span>Meio Ambiente</span></div>
+        </div>
+
+        <div class="missao-box">
+            <h2 id="missao-titulo"></h2>
+            <p id="missao-desc"></p>
+            <div id="opcoes" class="opcoes-lista"></div>
+        </div>
+    </div>
+
+    <!-- Tela Final: Fundo Lavoura de Milho -->
+    <div id="tela-final" class="container oculto">
+        <div id="resultado-img-fundo"></div>
+        <h2 id="resultado-titulo"></h2>
+        <p id="resultado-desc"></p>
+        <button class="btn-principal" onclick="window.location.reload()">Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
